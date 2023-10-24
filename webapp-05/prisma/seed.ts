@@ -5,6 +5,10 @@ import { type Item } from "@/types"
 
 const prisma = new PrismaClient()
 
+// Strategy: "closest" -> 
+// https://fakerjs.dev/api/word.html
+// The strategy to apply when no words with a matching length are found.
+// Here: Returns any of the words closest to the given length
 const createItem = (): Item => {
   return {
     id: faker.string.uuid(),
