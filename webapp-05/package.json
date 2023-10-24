@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "next build",
-    "predev": "prisma generate && prisma db push && pnpm run seed",
+    "predev": "prisma generate && prisma db push && npm run seed",
     "db:generate": "prisma generate",
     "dev": "next dev",
     "e2e": "playwright test",
